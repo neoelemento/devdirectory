@@ -1,0 +1,94 @@
+/* ========== Overrides ============ */
+
+/* Remove the dotted borders on Firefox */
+
+a, a:hover, a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+
+.nav-elements-font {
+    color: #F4645F;
+    font-weight: 500;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
+    @extend .nav-elements-font;
+}
+
+.navbar-default .navbar-brand {
+    @extend .nav-elements-font;
+}
+
+.navbar-brand img {
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+/* Main css begins here */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-wide {
+    width: 25%;
+}
+
+.btn-dd {
+    background-color: #F4645F;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.main-banner {
+    width: 100%;
+    height: 550px;
+    background: url('../img/bg.jpg') center center;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+.main-banner-content {
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    line-height: 50%;
+    min-height: 350px;
+}
+
+.main-banner-header {
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.main-banner-subheader {
+    font-size: 2em;
+    margin: 1em;
+}
+
+.footer {
+    padding: 10px;
+    height: 50px;
+}
+
+.copyright {
+    padding: 10px;
+    font-weight: 500;
+    & a {
+        color: #F4645F;
+    }
+}
