@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dev Directory | A curated list of developers and their favourites</title>
-	<link rel="icon" href="/img/favicon.png" type="image/png">
+	<link rel="icon" href="{{ asset('/img/favicon.png') }}" type="image/png">
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
 	<!-- Fonts -->
@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="/">
-			        <img alt="Brand" src="/img/logo.png"> Dev Directory
+			        <img alt="Brand" src="{{ asset('/img/logo.png') }}"> Dev Directory
 			    </a>
 			</div>
 

@@ -14,7 +14,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .nav-elements-font {
-    color: #F4645F;
+    color: $primary;
     font-weight: 500;
 }
 
@@ -36,6 +36,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 body {
     font-family: 'Raleway', sans-serif;
+    color: $text;
 }
 
 .btn-wide {
@@ -43,7 +44,7 @@ body {
 }
 
 .btn-dd {
-    background-color: #F4645F;
+    background-color: $primary;
     border: none;
     border-radius: 0;
     color: #fff;
@@ -89,10 +90,16 @@ body {
     padding: 10px;
     font-weight: 500;
     & a {
-        color: #F4645F;
+        color: $primary;
     }
 }
 
-.form-header-public {
-    font-size: 5em;
+.public-form {
+    margin-top: 50px;
+}
+
+.alert-dd {
+    color: $primary;
+    background-color: $primary-light;
+    border-color: $primary;
 }

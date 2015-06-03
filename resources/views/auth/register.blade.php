@@ -3,10 +3,9 @@
 @section('content')
 <div class="container-fluid">
 	<div class="row">
-	<h1 class="text-center form-header-public">Dev Directory</h1>
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Register</div>
+		<div class="col-md-4 col-md-offset-4">
+			<div class="panel panel-default public-form">
+				<div class="panel-heading text-center">Register on Dev Directory</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -19,43 +18,34 @@
 						</div>
 					@endif
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
+					<form class="" role="form" method="POST" action="{{ url('/auth/register') }}">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Name</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
-							</div>
+							<label class="control-label">Name</label>
+							<input type="text" class="form-control" name="name" value="{{ old('name') }}">
 						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
+							<label class="control-label">E-Mail Address</label>
+							<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
+							<label class="control-label">Password</label>
+							<input type="password" class="form-control" name="password">
 						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Confirm Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password_confirmation">
-							</div>
+							<label class="control-label">Confirm Password</label>
+							<input type="password" class="form-control" name="password_confirmation">
 						</div>
 
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									Register
-								</button>
-							</div>
+							<button type="submit" class="btn btn-dd btn-lg btn-block">
+								Register
+							</button>
+							<a class="btn btn-link" href="{{ url('/auth/login') }}">Already registered?</a>
 						</div>
 					</form>
 				</div>
